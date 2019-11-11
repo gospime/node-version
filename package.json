@@ -1,0 +1,37 @@
+{
+  "name": "@gospime/node-version",
+  "version": "1.0.0",
+  "description": "Check required and installed node versions",
+  "keywords": [
+    "gospime",
+    "node-version"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install && npm audit fix",
+    "up": "npm update",
+    "check": "npm outdated",
+    "upgrade": "npm run up && npm run check && npm run build",
+    "push-version": "standard-version",
+    "ls-g": "npm list -g --depth=0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gospime/node-version.git"
+  },
+  "author": "Oleg Kravchuk <oleg.kravchuk@gospime.com> (https://gospime.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gospime/node-version/issues"
+  },
+  "homepage": "https://github.com/gospime/node-version#readme",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "semver": "^6.3.0"
+  },
+  "devDependencies": {
+    "standard-version": "^7.0.0"
+  }
+}
