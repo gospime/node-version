@@ -32,7 +32,7 @@
     "semver": "^6.3.0"
   },
   "devDependencies": {
-    "standard-version": "^7.1.0"
+    "standard-version": "^8.0.1"
   },
   "optionalDependencies": {
     "minimist": "^1.2.5"
